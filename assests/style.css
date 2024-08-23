@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #ff651c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cb612f;
+    text-decoration: none;
+}
+
+.primary {
+    color: #ff651c;
+}
+
+/* main header */
+.main-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    background: transparent;
+    transition: 0.3s background;
+}
+.fixed-header .main-header{
+   background: rgba(255, 255, 255, 0.9)
+   
+}
+.main-header .navbar {
+    padding: 15px 0;
+}
+
+.main-header .navbar-nav>li {
+    padding: 0 10px;
+}
+
+.main-header .navbar-nav>li>.nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.main-header .navbar-nav>li>.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background: #ff651c;
+    transition: ease all 0.3s;
+}
+
+.main-header .navbar-nav>li>.nav-link:hover {
+    color: #ff651c;
+}
+
+.main-header .navbar-nav>li>.nav-link:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .main-header .navbar-collapse {
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+
+    }
+
+    .main-header .navbar-nav>li+li {
+        border-top: 1px solid rgba(55, 55, 55, 0.1);
+    }
+
+    .main-header .navbar-nav>li>.nav-link:hover:after {
+        display: none;
+    }
+
+    .main-header .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 4px 9px;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .main-header .navbar-toggler span {
+        width: 25px;
+        height: 2px;
+        background-color: black;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .main-header .navbar-toggler:not(.collapsed) span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+.colored-btn {
+    padding: 8px 20px;
+    border: 2px solid #ff651c;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease all 0.3s;
+    display: inline-block;
+    background: #ff651c;
+    color: #ffff;
+    box-shadow: 6px 6px 0 -1px black;
+}
+
+.colored-btn:hover {
+    color: #fff;
+    background: black;
+    border-color: black;
+    box-shadow: 5px 5px 0 -2px #ff651c;
+}
+
+.bg-gray {
+    background-color: rgba(254, 196, 72, 0.1);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.home-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+@media (max-width:767px){
+    .home-section{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+}
+.home-section .container{
+    position: relative;
+    z-index: 1;
+}
+.home-section .home-intro h6{
+    font-weight: 600;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+@media (max-width:767px){
+    .home-section .home-intro h6{
+        margin: 0 0 20px;
+    }
+}
+.home-section .home-intro h1{
+    font-weight: 600;
+    font-size: 50px;
+    color: black;
+    margin: 0 0 35px;
+    line-height: 1;
+}
+@media (max-width:767px){
+    .home-section .home-intro h1{
+        margin: 0 0 30px;
+        font-size: 40px;
+    }
+}
+.home-section .home-intro h1 span{
+    border-bottom: 2px solid #ff651c;
+}
+@media (max-width:767px){
+    .colored-btn{
+        margin-bottom: 0;
+    }
+}
+.home-image img{
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+    z-index: -2;
+}
+@media (max-width:767px){
+    .home-image img{
+        height: 250px;
+        width: 250px;
+    }
+}
+.anime-elements{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.anime-elements .anime-element{
+    position: absolute;
+    font-size:30px;
+
+}
+.anime-elements .anime-element:nth-child(1){
+    top: 12%;
+    left: 15%;
+    color: #ff651c;
+    animation: aniOne 13s infinite linear alternate;
+}
+.anime-elements .anime-element:nth-child(2){
+    bottom: 15%;
+    left: 45%;
+    color: cornflowerblue;
+    animation: aniTwo 13s infinite linear alternate;
+}
+.anime-elements .anime-element:nth-child(3){
+    bottom: 20%;
+    left: 30%;
+    color: #ff651c;
+    animation: aniThree 13s infinite linear alternate;
+}
+.anime-elements .anime-element:nth-child(4){
+    bottom: 15%;
+    right: 25%;
+    color: cyan;
+    animation: aniFour 13s infinite linear alternate;
+}
+.anime-elements .anime-element:nth-child(5){
+    top: 17%;
+    right: 15%;
+    color: #ff651c;
+    animation: aniThree 13s infinite linear alternate;
+}
+@keyframes aniOne{
+    0% {transform: translate(0,0) rotate(0);}
+    40% {transform: translate(141px,72px) rotate(75deg);}
+   80% {transform: translate(-40px,72px) rotate(145deg);}
+    100% {transform: translate(0,0) rotate(0);}
+}
+@keyframes aniTwo{
+    0% {transform: translate(0,0) rotate(0) scale(1);}
+    20% {transform: translate(73px,-1px) rotate(36deg) scale(.9);}
+    60% {transform: translate(83px,122px) rotate(108deg);}
+    100% {transform: translate(0,0) rotate(0) scale(1);}
+}
+@keyframes aniThree{
+    0% {transform: translate(-300px,151px) rotate(0);}
+    20% {transform: translate(251px,-200px) rotate(180deg);}
+ 
+}
+@keyframes aniFour{
+    0% {transform: translate(61px,-99px) rotate(0);}
+    20% {transform: translate(4px,-190px) rotate(38deg);}
+    60% {transform: translate(-263px,-164px) rotate(108deg);}
+    100% {transform: translate(-1px,0) rotate(108deg);}
+}
