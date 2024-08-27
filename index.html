@@ -1,63 +1,66 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio-using-bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="./assests/style.css">
-        <script src="./assests/script.js" defer></script>
-</head> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assests/style.css">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
 <body>
-     <header class="main-header">
+    <header class="main-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-                  <!-- name/logo -->
-                   <a href="#" class="navbar-brand">
+                <!-- name/logo -->
+                <a href="#" class="navbar-brand">
                     <h4 class="mb-0">Lokesh <span class="primary">Kumar</span></h4>
-                   </a>
-                   <!-- menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
-                      <ul class="navbar-nav mx-auto">
-                            <li>
-                                <a href="#home" class="nav-link">Home</a>
-                        
-                            </li>
-                            <li>
-                                <a href="#about" class="nav-link">About me</a>
-                        
-                            </li>
-                            <li>
-                                <a href="#services" class="nav-link">Service</a>
-                        
-                            </li>
-                            <li>
-                                <a href="#skills" class="nav-link">Skills</a>
-                        
-                            </li>
-                            <li>
-                                <a href="#portfolio" class="nav-link">Portfolio</a>
-                        
-                            </li>
-                      </ul>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
+                </a>
+                <!-- menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+                    <ul class="navbar-nav mx-auto">
+                        <li>
+                            <a href="#home" class="nav-link">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="#about" class="nav-link">About me</a>
+
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
+
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav-link">Skills</a>
+
+                        </li>
+                        <!-- <li>
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="ms-auto d-none d-lg-block">
                     <a class="colored-btn" href="#contact">Contact Now</a>
-                    </div>
-                    <!-- Mobile menu button  -->
-                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#navbar-collapse-toggle">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                    </button>          
+                </div>
+                <!-- Mobile menu button  -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-collapse-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
-     </header>
-     <!-- main section start -->
-      <main>
+    </header>
+    <!-- main section start -->
+    <main>
         <section id="home" class="home-section bg-gray">
             <div class="container">
                 <div class="anime-elements">
@@ -68,27 +71,280 @@
                     <div class="anime-element"><i class="bx bxl-java"></i></div>
                 </div>
                 <div class="row gy-5 align-items-center">
-                     <div class="col-lg-6">
+                    <div class="col-lg-6">
                         <div class="home-intro text-center text-lg-start">
-                           <h6>Hi, My name is Lokesh.</h6>
-                           <h1>I'm a Web <span>Developer</span></h1>
-                           <a href="#about" class="colored-btn">About me</a>
+                            <h6>Hi, My name is Lokesh.</h6>
+                            <h1>I'm a Web <span id="type-it"></span></h1>
+                            <a href="#about" class="colored-btn">About me</a>
                         </div>
-                     </div>
-                     <div class="col-lg-6 pt-1 pt-lg-0">
+                    </div>
+                    <div class="col-lg-6 pt-1 pt-lg-0">
                         <div class="home-image text-center">
-                              <img src="./assests/IMG_5915.jpg" alt="">
+                            <img src="./assests/IMG_5915.jpg" alt="">
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </section>
-      </main>
-    
+        <!-- About section -->
+        <section id="about" class="section">
+            <div class="container text-center">
+                <h2>About Me</h2>
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6 text-center mt-5">
+                        <img style="border-radius: 10px; width: 400px;" src="./assests/971.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="about-text mt-2">
+                            <h3 class="h1  text-dark fw-semibold fs-4">
+                                I am a passionate and dedicated web developer with a strong foundation in front-end
+                                technologies.
+                            </h3>
+                            <p>My focus is on building responsive, user-friendly websites and applications that provide
+                                seamless experiences across devices. I am eager to bring my creativity and technical
+                                expertise to a dynamic team where I can continue to grow and contribute to exciting
+                                projects.
+                                I am actively seeking opportunities where I can apply my skills and learn from industry
+                                professionals, with a goal to contribute to innovative web solutions.
+                            </p>
+                            <div class="row pt-2 mb-1">
+                                <div class="col-6 col-md-4">
+                                    <h5 class="text-primary fw-semibold fs-4 d-flex">10+ <span
+                                            class="text- fs-6">Projects Completed</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project section -->
+        <section id="projects" class="section"
+            style="background-image: url(./assests/bg.png); background-repeat: no-repeat; background-size: cover;">
+            <div class="container text-center">
+                <h2>My Projects</h2>
+                <div class="row mt-2">
+                    <div class="col-lg-4 text-center">
+                        <h4>Weather App</h4>
+                        <img src="./assests/weather.jpg" alt="">
+                        <a href="file:///C:/Users/LOKESH%20KUMAR/Desktop/Weather_proj/index.html">
+                            <button>Go To App</button>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h4>Tic-Tac-Toe</h4>
+                        <img src="./assests/tic-tac.jpg" alt="">
+                        <a href="file:///C:/Users/LOKESH%20KUMAR/Desktop/Tic-tac-toe/index.html">
+                            <button>Go To App</button>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h4>Todo-List</h4>
+                        <img src="./assests/todo.jpg" alt="">
+                        <a href="file:///C:/Users/LOKESH%20KUMAR/Desktop/To-Do%20List/index.html">
+                            <button>Go To App</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <h3>Weather App</h3>
+                        <img src="./assests/weather.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h3>Tic-Tac-Toe</h3>
+                        <img src="./assests/tic-tac.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h3>Todo-List</h3>
+                        <img src="./assests/todo.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        <div class="section-heading text-start">
+                            <h3>My skills</h3>
+                        </div>
+                        <div class="skill-box">
+                            <div class="row g-3">
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small bg-1">
+                                        <div class="icon">
+                                            <i class="bx bxl-html5"></i>
+                                        </div>
+                                        <h6>HTML</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small bg-1">
+                                        <div class="icon">
+                                            <i class="bx bxl-css3"></i>
+                                        </div>
+                                        <h6>CSS</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small bg-1">
+                                        <div class="icon">
+                                            <i class="bx bxl-javascript"></i>
+                                        </div>
+                                        <h6>JAVASCRIPT</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small bg-1">
+                                        <div class="icon">
+                                            <i class="bx bxl-react"></i>
+                                        </div>
+                                        <h6>REACT</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small ">
+                                        <div class="icon">
+                                            <i class="bx bxl-java"></i>
+                                        </div>
+                                        <h6>JAVA</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small ">
+                                        <div class="icon">
+                                            <i class="fa-brands fa-bootstrap"></i>
+                                        </div>
+                                        <h6>C++</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center" id="skill-image">
+                        <img src="./assests/Coding-Skills.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section bg-dark">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        <div class="contact-form  mb-4">
+                            <h2 class="text-success text-center">Get in touch</h2>
+                            <p>If you have any questions or just want to say hello, feel free to reach out! I'd love to hear from you.</p>
+                            <form action="#">
+                                <div class="row gy-4 gx-3">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-control" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Contact</label>
+                                            <input type="tel" class="form-control" name="contact">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Subject</label>
+                                            <input type="text" class="form-control" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Message</label>
+                                            <textarea name="message" rows="3" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="colored-btn" type="submit">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="right">
+                        <div class="container">
+                            <ul class="contact-infos" style="background-color: #fff;">
+                                <li>
+                                    <div class="image">
+                                        <img src="./assests/phone.png" alt="">
+                                    </div>
+                                    <div class="col ps-3 mt-3">
+                                        <h5>Phone</h5>
+                                        <p>7654463578</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="./assests/email.png" alt="">
+                                    </div>
+                                    <div class="col ps-3 mt-3">
+                                        <h5>Email</h5>
+                                        <p>lokeshbhaskar28@gmail.com</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="./assests/github.png" alt="">
+                                    </div>
+                                    <div class="col ps-3 mt-3">
+                                        <h5>Github</h5>
+                                        <a href="https://github.com/lokeshbhaskar">click here</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="./assests/linkedin.png" alt="">
+                                    </div>
+                                    <div class="col ps-3 mt-3">
+                                        <h5>Linkedin</h5>
+                                        <a href="https://www.linkedin.com/in/lokesh-kumar-3369a8219/">click here</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="./assests/instagram.png" alt="">
+                                    </div>
+                                    <div class="col ps-3 mt-3">
+                                        <h5>Instagram</h5>
+                                        <a href="https://www.instagram.com/lokesh_01________/">click here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <li style="display: flex; align-items: center; margin-top: 30px;">
+                                <div class="image2">
+                                    <img src="./assests/thankyou.png" alt="">
+                                </div>
+                                <div class="col ps-3 mt-3 ">
+                                    <h5 style="color: antiquewhite;">We appreciate your visit and hope to see you again soon. Have a great day!🤗🤗 </h5>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="./assests/jquery-3.7.1.min.js"></script>
+    <script src="./assests/jquery-3.7.1.min.js"></script>
+    <script src="./assests/script.js"></script>
+    <script src="./assests/typed.js"></script>
 </body>
 
 </html>
