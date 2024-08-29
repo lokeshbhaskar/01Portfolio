@@ -514,8 +514,8 @@ button {
     background-color: #14d7e8;
     /* background: linear-gradient(); */
     position: absolute;
-    top:0;
-    left: 50%;
+    top:85%;
+    left: 30%;
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
     color: #fff;
@@ -528,11 +528,11 @@ button {
     top: 85%;
     left: 30%;
     visibility: visible;
-    transform: translate(-50%,-50%) scale(1);   
+    transform: translate(-50%,-50%) scale(1); 
 }
 .Popup img{
-    width: 80px;
-    margin-top: -16%;
+    width: 50px;
+    margin-top: 45px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
 }
