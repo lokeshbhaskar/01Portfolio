@@ -258,7 +258,7 @@
                             <h2 class="text-success text-center">Get in touch</h2>
                             <p>If you have any questions or just want to say hello, feel free to reach out! I'd love to
                                 hear from you.</p>
-                            <form action="#">
+                            <form action=".../03_portfolio.php" method="POST">
                                 <div class="row gy-4 gx-3">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -269,19 +269,19 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" name="email">
+                                            <input type="email" class="form-control" name="email" >
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Contact</label>
-                                            <input type="tel" class="form-control" name="contact">
+                                            <input type="tel" class="form-control" name="contact" >
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Subject</label>
-                                            <input type="text" class="form-control" name="name">
+                                            <input type="text" class="form-control" name="subject" >
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -291,14 +291,14 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="colored-btn" type="submit" onclick="openPopup()">Send
+                                        <button class="colored-btn" type="submit" value="submit">Send
                                             message</button>
-                                        <div class="Popup" id="popup">
+                                        <!-- <div class="Popup" id="popup">
                                             <img src="./assests/check.png">
                                             <h2>Thank You!</h2>
                                             <p>Your details has been successfully submitted. Thanks</p>
                                             <button type="button" onclick="closePopup()">OK</button>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </form>
@@ -376,5 +376,4 @@
     <script src="./assests/script.js"></script>
     <script src="./assests/typed.js"></script>
 </body>
-
 </html>
