@@ -550,11 +550,38 @@ button {
     width: 100%;
     background: #6fd649;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 10px 0;
     font-size: 18px;
     border: 0;
     outline: none;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0,0.1);
+}
+/* Resume */
+.about-resume{
+    display: flex;
+    height: 50px;
+    gap: 30px;
+    
+}
+#resume{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #037685;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px -2px #000;
+    transition: ease all 0.3s;
+}
+#resume:hover{
+    box-shadow: 5px 5px 2px -2px #ff651c;
+}
+#resume h5{
+    color: #037685;
+}
+#resume .fa-circle-down{
+font-size: 25px;
+color: #231651;
 }

@@ -12,19 +12,17 @@ $(window).on("scroll",function(){
 $(window).ready(function(){
   //typing animation
   new Typed('#type-it', {
-    strings: ['Designer', 'Developer'],
+    strings: ['Developer'],
     typeSpeed: 100,
-    loop:true,
+    loop:false,
   });
 })
 // popup
 let popup= document.getElementById("popup");
-
 function openPopup(){
     console.log("h");
     popup.classList.add("open-popup");
 }
-
 function closePopup(){
     popup.classList.remove("open-popup");
 }

@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assests/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
@@ -74,7 +74,17 @@
                         <div class="home-intro text-center text-lg-start">
                             <h6>Hi, My name is Lokesh.</h6>
                             <h1>I'm a Web <span id="type-it"></span></h1>
-                            <a href="#about" class="colored-btn">About me</a>
+                            <div class="about-resume">
+                                <a href="#about" class="colored-btn">About me</a>
+                                <!-- resume -->
+                                <section id="resume">
+                                    <h5>My Resume</h5>
+                                    <a href="Lokesh.resume.pdf" download="Lokesh.resume.pdf"
+                                        class="resume-button">
+                                        <i class="fa-solid fa-circle-down"></i>
+                                    </a>
+                                </section>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 pt-1 pt-lg-0">
@@ -236,7 +246,7 @@
                                 <div class="col-6 col-md-4 col-lg-6">
                                     <div class="feature-box feature-box-small ">
                                         <div class="icon">
-                                            <i class="fa-brands fa-bootstrap"></i>
+                                             <img src="c-.png" alt="">
                                         </div>
                                         <h6>C++</h6>
                                     </div>
@@ -258,7 +268,7 @@
                             <h2 class="text-success text-center">Get in touch</h2>
                             <p>If you have any questions or just want to say hello, feel free to reach out! I'd love to
                                 hear from you.</p>
-                            <form action=".../03_portfolio.php" method="POST">
+                            <form>
                                 <div class="row gy-4 gx-3">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -269,19 +279,19 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" name="email" >
+                                            <input type="email" class="form-control" name="email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Contact</label>
-                                            <input type="tel" class="form-control" name="contact" >
+                                            <input type="tel" class="form-control" name="contact">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Subject</label>
-                                            <input type="text" class="form-control" name="subject" >
+                                            <input type="text" class="form-control" name="subject">
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -291,14 +301,15 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="colored-btn" type="submit" value="submit">Send
-                                            message</button>
-                                        <!-- <div class="Popup" id="popup">
+                                        <button class="colored-btn" type="submit" value="submit"
+                                            onclick="openPopup()">Send message</button>
+                                        <div class="Popup" id="popup">
                                             <img src="./assests/check.png">
                                             <h2>Thank You!</h2>
-                                            <p>Your details has been successfully submitted. Thanks</p>
-                                            <button type="button" onclick="closePopup()">OK</button>
-                                        </div> -->
+                                            <p>Your details has been successfully submitted. Thanks
+                                            <p>
+                                                <button type="button" onclick="closePopup()">OK</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -376,4 +387,5 @@
     <script src="./assests/script.js"></script>
     <script src="./assests/typed.js"></script>
 </body>
+
 </html>
